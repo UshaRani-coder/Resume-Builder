@@ -103,8 +103,8 @@ function Template3() {
       {/* colorless area  */}
       <div className="data-space">
         {/* About me  */}
-        <div className="about-me mb-[-50px] h-[380px] bg-[rgba(255,255,255,0.448)] w-[720px]">
-          <div className="professional-experience flex flex-row items-center">
+        <div className="about-me   bg-[rgba(255,255,255,0.448)] w-[720px]">
+          <div className="professional-experience flex flex-row  items-start">
             <div className="w-[90%] flex mt-3 ml-[40px] flex-col items-start">
               <h2 className="text-[35px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
                 About me
@@ -125,7 +125,7 @@ function Template3() {
               )}
             </div>
             {/* this is EDU DESC  */}
-            <div className=" skill-set w-[450px] flex flex-col ml-5 mt-1 h-[230px] max-h-[230px] overflow-y-auto text-base p-5 rounded-[20px]">
+            <div className=" skill-set w-[450px] flex flex-col ml-5 mt-1  text-base p-5 rounded-[20px]">
               <h2 className="text-[35px] mb-5 font-[bold] text-[rgb(99,133,255)]">
                 Key Skills
               </h2>
@@ -162,7 +162,7 @@ function Template3() {
             </div>
           </div>
         </div>
-        <hr className="w-[700px] mt-[-20px] ml-[50px] h-[5px] bg-[rgb(99,133,255)] shadow-[0_0_5px_2px_rgba(82,160,255,0.8)] rounded-[90%] border-[none]" />
+        <hr className="w-[700px] mt-[20px] ml-[50px] h-[5px] bg-[rgb(99,133,255)] shadow-[0_0_5px_2px_rgba(82,160,255,0.8)] rounded-[90%] border-[none]" />
 
         <div className="about">
           <h2 className="text-[35px]  ml-[50px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
@@ -336,13 +336,13 @@ function Template3() {
       {userInputData &&
       userInputData.language &&
       userInputData.language.length > 0 ? (
-        <div className="">
+        <div className="flex flex-col justify-start w-[720px]">
           <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
             Languages
           </h2>
           {userInputData.language.map((lan, index) => {
             return (
-              <ul key={index} className="flex">
+              <ul key={index} className="flex mx-[15px]">
                 <div className=" w-3 h-2.5 bg-[rgb(99,133,255)] m-2.5 rounded-[50px]" />
                 <li className=" text-black  w-[150px]">
                   {lan[0]} - {lan[1]}
@@ -360,13 +360,13 @@ function Template3() {
       {userInputData &&
       userInputData.projects &&
       userInputData.projects.length > 0 ? (
-        <>
+        <div className='flex flex-col justify-center'>
           <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
             Projects
           </h2>
           {userInputData.projects.map((project) => {
             return (
-              <ul key={project.id} className="">
+              <ul key={project.id} className="m-[15px]">
                 <li className=" w-full ">
                   <div className="project-header flex flex-row gap-[15px] items-center">
                     <h2 className="text-2xl heading-S1">{project.Heading}</h2>
@@ -385,7 +385,7 @@ function Template3() {
               </ul>
             )
           })}
-        </>
+        </div>
       ) : null}
       {userInputData && userInputData.projects && (
         <hr className="w-[700px] h-[5px]    mt-[-20px] ml-[50px]  bg-[rgb(99,133,255)] shadow-[0_0_5px_2px_rgba(82,160,255,0.8)] rounded-[90%] border-[none] mt-[25px]" />
@@ -395,7 +395,7 @@ function Template3() {
       {userInputData &&
       userInputData.certificates &&
       userInputData.certificates.length > 0 ? (
-        <>
+        <div className='flex flex-col justify-start w-[710px]'>
           <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
             Certificates
           </h2>
@@ -403,7 +403,7 @@ function Template3() {
             return (
               <ul
                 key={index}
-                className="text-[15px] text-gray-500 leading-5  pt-2 flex gap-[10px]"
+                className="text-[15px] text-gray-500 leading-5 mx-[15px]  pt-2 flex gap-[10px]"
               >
                 <h2 className="font-serif font-bold">
                   {certificate.Certificate_Name}
@@ -415,7 +415,7 @@ function Template3() {
               </ul>
             )
           })}
-        </>
+        </div>
       ) : null}
       {userInputData && userInputData.projects && (
         <hr className="w-[700px]   mt-[-20px] ml-[50px] h-[5px] bg-[rgb(99,133,255)] shadow-[0_0_5px_2px_rgba(82,160,255,0.8)] rounded-[90%] border-[none] mt-[25px]" />
@@ -425,14 +425,14 @@ function Template3() {
         ? userInputData.customData.map((customData) => {
             return (
               <>
-                <ul key={customData.id} className="w-[80%] ">
+                <ul key={customData.id} className="">
                   <li className=" w-full ">
-                    <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
+                    <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[25px]">
                       {customData.Custom_Heading}
                     </h2>
 
                     <div
-                      className="max-w-[700px] text-wrap  text-[17px] m-[15px] text-[rgb(84,84,84)]"
+                      className="max-w-[700px] text-wrap  text-[17px] m-[25px] text-[rgb(84,84,84)]"
                       dangerouslySetInnerHTML={{
                         __html: customData.description,
                       }}

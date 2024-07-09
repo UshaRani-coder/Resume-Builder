@@ -85,8 +85,8 @@ function Template2() {
         </div>
 
         <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-        <div className="flex flex-row">
-          <div className="bg-[rgba(255,255,255,0.448)] w-[720px] h-[200px] max-h-[200px] overflow-y-auto m-[38px] rounded-[25px]">
+        <div className="flex flex-row itmes-start">
+          <div className="bg-[rgba(255,255,255,0.448)] w-[720px]  m-[38px] rounded-[25px]">
             <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
               Skills
             </h2>
@@ -217,7 +217,7 @@ function Template2() {
         </div>
 
         <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-        <div className="bg-[rgba(255,255,255,0.448)] w-[720px] h-[200px] m-[38px] rounded-[25px] max-h-[200px] overflow-auto">
+        <div className="bg-[rgba(255,255,255,0.448)] w-[720px] m-[38px] rounded-[25px] ">
           <div className="flex flex-col px-4 ">
             {/* <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]"> */}
             <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] mt-2">
@@ -277,7 +277,7 @@ function Template2() {
         userInputData.projects.length > 0 ? (
           <div>
             <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-            <div className="projectsD3  bg-[rgba(255,255,255,0.448)] w-[720px] overflow-x-hidden max-h-[200px] overflow-auto m-[38px]  rounded-[25px]">
+            <div className="projectsD3  bg-[rgba(255,255,255,0.448)] w-[720px] overflow-x-hidden m-[38px]  rounded-[25px]">
               <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
                 Projects
               </h2>
@@ -319,7 +319,7 @@ function Template2() {
         userInputData.certificates.length > 0 ? (
           <>
             <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-            <div className="certificates bg-[rgba(255,255,255,0.448)] w-[720px] h-[200px] max-h-[200px] overflow-auto m-[38px] rounded-[25px] ">
+            <div className="certificates bg-[rgba(255,255,255,0.448)] w-[720px]  m-[38px] rounded-[25px] ">
               <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
                 Certificates
               </h2>
@@ -348,7 +348,7 @@ function Template2() {
         userInputData.language.length > 0 ? (
           <>
             <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-            <div className="languagesD3 bg-[rgba(255,255,255,0.448)] w-[720px] h-[200px] max-h-[200px] overflow-auto m-[38px] rounded-[25px] ">
+            <div className="languagesD3 bg-[rgba(255,255,255,0.448)] w-[720px]  m-[38px] rounded-[25px] ">
               <h2 className="text-[25px] font-[bold] text-[rgb(99,133,255)] m-[15px]">
                 Languages
               </h2>
@@ -374,7 +374,7 @@ function Template2() {
               return (
                 <>
                   <hr className="w-[650px] border ml-[65px] mt-5 border-solid border-[rgb(1,63,107)]" />
-                  <div className="customD3  bg-[rgba(255,255,255,0.448)] w-[720px] overflow-x-hidden  max-h-[200px] overflow-auto m-[38px] rounded-[25px]">
+                  <div className="customD3  bg-[rgba(255,255,255,0.448)] w-[720px] overflow-x-hidden   m-[38px] rounded-[25px]">
                     <ul
                       key={customData.id}
                       className=" text-[17px] text-[rgb(77,77,77)] m-[15px] "

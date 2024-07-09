@@ -48,7 +48,7 @@ function Template4() {
               </div>
               <hr className="my-4 w-4/5 bg-[aliceblue]  m-auto rounded-[70px] border-2 border-solid border-[aliceblue]" />
 
-              <div className="Technical-skills  h-[150px] flex flex-wrap max-h-[150px] overflow-y-auto">
+              <div className="Technical-skills   flex flex-wrap ">
                 {userInputData &&
                 userInputData.skills &&
                 userInputData.skills.length > 0 ? (
