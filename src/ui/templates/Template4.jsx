@@ -1,8 +1,9 @@
-import { selectUserData } from '../../reduxToolkit/FormDataSlice.jsx'
 import { useSelector } from 'react-redux'
-import { selectExperienceData } from '../../reduxToolkit/FormDataSlice.jsx'
-import { selectEducationData } from '../../reduxToolkit/FormDataSlice.jsx'
-
+import {
+     selectEducationData,
+     selectExperienceData,
+     selectUserData,
+   } from '../../reduxToolkit/FormDataSlice.jsx'
 function Template4() {
   const userInputData = useSelector(selectUserData)
   const userExperienceData = useSelector(selectExperienceData)
@@ -18,12 +19,12 @@ function Template4() {
   return (
     <>
       <div
-        className=" w-[794px] h-[1070px] max-h-[1070px] overflow-y-auto bg-white flex border border-gray-200"
+        className=" w-[794px]  bg-white flex border border-gray-200"
         // style={{ transform: "scale(0.7)", marginTop: "-150px" }}
       >
         <div className="left-box">
           <div className="profile-space w-[200px] h-[200px] bg-white mt-10 mx-10 ml-[100px] rounded-[300px] border-[5px] border-solid border-[gold]" />
-          <div className="top-curve w-[400px] h-[822px] max-h-[822px] overflow-y-auto bg-[gold] mx-2.5 my-[50px] rounded-[50px_50px_0px_0px]">
+          <div className="top-curve w-[400px]  bg-[gold] mx-2.5 my-[50px] rounded-[50px_50px_0px_0px] grow">
             <div className="data">
               <div className="about-right h-auto pt-px text-center px-5">
                 <h1 className="text-center text-[40px] pt-2.5 text-3xl my-10">
@@ -104,7 +105,7 @@ function Template4() {
             ) : null}
           </div>
         </div>
-        <div className="right-box bg-white w-[400px] h-[1070px] max-h-[1070px] overflow-y-auto border-[50px_0px_20px_0px] border-solid border-t-[35px] border-b-[20px] border-[gold]">
+        <div className="right-box bg-white w-[400px]  border-[50px_0px_20px_0px] border-solid border-t-[35px] border-b-[20px] border-[gold]">
           <h1 className="name-right pt-[45px] text-center text-[40px] ">
             {userInputData && userInputData.firstName
               ? userInputData.firstName

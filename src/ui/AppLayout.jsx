@@ -148,7 +148,7 @@ function AppLayout() {
       />
       {popupVisible && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 gap-4 max-h-[250px] overflow-y-auto md:grid-cols-3 w-[70%] relative mt-[60px]">
+          <div className="bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 gap-4  md:grid-cols-3 w-[70%] relative mt-[60px]">
             <button
               onClick={closePopup}
               className="absolute top-4 right-2 text-gray-500 hover:text-gray-700 focus:outline-none"

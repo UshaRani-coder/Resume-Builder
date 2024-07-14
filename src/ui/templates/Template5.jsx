@@ -9,7 +9,7 @@ function Template5() {
   const userExperienceData = useSelector(selectExperienceData)
   const userEducationData = useSelector(selectEducationData)
   return (
-    <div className="bg-white w-[210mm] h-[1120px]  max-h-[1120px] overflow-y-auto p-10 border border-gray-200 ">
+    <div className="bg-white w-[210mm]  p-10 border border-gray-200 ">
       {/*Template Header */}
       <div className="header-wrapper pt-5  ">
         <header className="flex justify-between  ">
